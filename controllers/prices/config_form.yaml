@@ -1,0 +1,31 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+# Record name
+name: Price
+
+# Model Form Field configuration
+form: $/elenstar/offers/models/price/fields.yaml
+
+# Model Class name
+modelClass: ElenStar\Offers\Models\Price
+
+# Default redirect location
+defaultRedirect: elenstar/offers/prices
+
+# Create page
+create:
+    title: backend::lang.form.create_title
+    redirect: elenstar/offers/prices/update/:id
+    redirectClose: elenstar/offers/prices
+
+# Update page
+update:
+    title: backend::lang.form.update_title
+    redirect: elenstar/offers/prices
+    redirectClose: elenstar/offers/prices
+
+# Preview page
+preview:
+    title: backend::lang.form.preview_title

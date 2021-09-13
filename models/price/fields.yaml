@@ -1,0 +1,17 @@
+# ===================================
+#  Form Field Definitions
+# ===================================
+
+fields:
+    title:
+        label: Заголовок
+        span: left
+    content:
+        label: Добавить цены
+        type: repeater
+        prompt: Добавить цены
+        style: default
+        groups: $/elenstar/offers/models/price/groups.yaml
+        maxItems: 2
+        span: left
+

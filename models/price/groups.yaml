@@ -1,0 +1,171 @@
+summer_prices:
+              name: Летние цены
+              description: Блок летних цен
+              icon: icon-leaf
+              span: left
+              fields:
+                  active:
+                      label: Активность
+                      span: left
+                      type: switch
+                  title:
+                      label: Заголовок для летних цен
+                  subtitle:
+                      label: Период действия летних цен
+                  price_items:
+                      label: Цены в будни и выходные
+                      type: repeater
+                      maxItems: 1
+                      form:
+                        fields:
+                          price_title1: 
+                              label: Понедельник-Пятница
+                              span: left
+                              type: repeater
+                              prompt: Добавить цены для будней
+                              form:
+                                fields:
+                                  time:
+                                    label: Время
+                                  price_opt:
+                                    label: Цена при оплате за месяц
+                                  price_roz:
+                                    label: Цена при разовой оплате
+                          price_title2: 
+                              label: Суббота-Воскресенье
+                              span: right
+                              type: repeater
+                              prompt: Добавить цены для выходных
+                              form:
+                                fields:
+                                  time1:
+                                    label: Время
+                                  price_opt1:
+                                    label: Цена при оплате за месяц
+                                  price_roz1:
+                                    label: Цена при разовой оплате
+                  text:
+                    label: Дополнительная текстовая информация к летним ценам
+                    type: repeater
+                    prompt: Добавить текст
+                    form:
+                        fields:
+                          text_area:
+                              type: textArea
+                              span: full                      
+
+winter_prices:
+              name: Зимние цены
+              description: Блок зимних цен
+              icon: icon-snowflake-o
+              span: right
+              fields:
+                  active:
+                      label: Активность
+                      span: left
+                      type: switch
+                  title:
+                      label: Заголовок для зимних цен
+                  subtitle:
+                      label: Период действия зимних цен
+                  price_items:
+                      label: Цены в будни и выходные со штатным тренером
+                      prompt: Добавить цены по дням недели
+                      type: repeater
+                      maxItems: 1
+                      form:
+                        fields:
+                          price_title1: 
+                              label: Понедельник-Пятница
+                              span: left
+                              type: repeater
+                              prompt: Добавить цены для будней
+                              form:
+                                fields:
+                                  time:
+                                    label: Время
+                                  price_opt:
+                                    label: Цена при оплате за месяц
+                                  price_roz:
+                                    label: Цена при разовой оплате
+                          price_title2: 
+                              label: Суббота
+                              span: right
+                              type: repeater
+                              prompt: Добавить цены для субботы
+                              form:
+                                fields:
+                                  time1:
+                                    label: Время
+                                  price_opt1:
+                                    label: Цена при оплате за месяц
+                                  price_roz1:
+                                    label: Цена при разовой оплате
+                          price_title3: 
+                              label: Воскресенье
+                              span: right
+                              type: repeater
+                              prompt: Добавить цены для воскресенья
+                              form:
+                                fields:
+                                  time1:
+                                    label: Время
+                                  price_opt1:
+                                    label: Цена при оплате за месяц
+                                  price_roz1:
+                                    label: Цена при разовой оплате
+                  price_items2:
+                      label: Цены в будни и выходные без штатного тренера
+                      prompt: Добавить цены по дням недели
+                      type: repeater
+                      maxItems: 1
+                      form:
+                        fields:
+                          price_title1: 
+                              label: Понедельник-Пятница
+                              span: left
+                              type: repeater
+                              prompt: Добавить цены для будней
+                              form:
+                                fields:
+                                  time:
+                                    label: Время
+                                  price_opt:
+                                    label: Цена при оплате за месяц
+                                  price_roz:
+                                    label: Цена при разовой оплате
+                          price_title2: 
+                              label: Суббота
+                              span: right
+                              type: repeater
+                              prompt: Добавить цены для субботы
+                              form:
+                                fields:
+                                  time1:
+                                    label: Время
+                                  price_opt1:
+                                    label: Цена при оплате за месяц
+                                  price_roz1:
+                                    label: Цена при разовой оплате
+                          price_title3: 
+                              label: Воскресенье
+                              span: right
+                              type: repeater
+                              prompt: Добавить цены для воскресенья
+                              form:
+                                fields:
+                                  time1:
+                                    label: Время
+                                  price_opt1:
+                                    label: Цена при оплате за месяц
+                                  price_roz1:
+                                    label: Цена при разовой оплате
+                  text:
+                    label: Дополнительная текстовая информация к зимним ценам
+                    type: repeater
+                    prompt: Добавить текст
+                    form:
+                        fields:
+                          text_area:
+                              type: textArea
+                              span: full
